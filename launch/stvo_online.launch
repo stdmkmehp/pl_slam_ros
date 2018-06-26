@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="stvopl_online" pkg="pl_slam_ros" type="stvopl_online" output="screen" />
+
+  <param name="config_file"	type="str"	value="/home/lab404/catkin_ws/src/pl_slam_ros/stvo-pl/config/config/config.yaml" />
+  <param name="camera_params"	type="str"	value="/home/lab404/catkin_ws/src/pl_slam_ros/stvo-pl/config/zed_params.yaml" />
+  <param name="scene_config"	type="str"	value="/home/lab404/catkin_ws/src/pl_slam_ros/stvo-pl/config/scene_config.ini" />
+
+</launch>
