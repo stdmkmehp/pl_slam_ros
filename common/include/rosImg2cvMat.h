@@ -61,7 +61,7 @@ void leftCompressedImCallback(const sensor_msgs::CompressedImageConstPtr& msg)
   	// ROS_INFO("leftCompressedImCallback");
   	// cv::imwrite("/home/lab404/Documents/leftIm.jpg",leftIm);
   }
-  catch (cv_bridge::Exception& e)
+  catch (...)
   {
   	ROS_ERROR("Could not convert from leftCompressedIm to cvMat.");
   }
@@ -75,7 +75,7 @@ void rightCompressedImCallback(const sensor_msgs::CompressedImageConstPtr& msg)
     // ROS_INFO("leftCompressedImCallback");
     // cv::imwrite("/home/lab404/Documents/rightIm.jpg",rightIm);
   }
-  catch (cv_bridge::Exception& e)
+  catch (...)
   {
     ROS_ERROR("Could not convert from rightCompressedIm to cvMat.");
   }
